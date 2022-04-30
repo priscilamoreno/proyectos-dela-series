@@ -1,0 +1,116 @@
+
+/* Titulo */
+#titulo {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url("file:/C:/Users/Usuario/priscila/curso icaro/proyecto web/imagenes/chicago.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-right: 75px;
+    align-items: center;
+
+}
+
+/* Elementos del menu */
+li {
+    padding-left: 2rem;
+    border: 1px solid red;
+    margin: 5em;
+}
+
+/* Texto de los elementos del menu */
+li a{
+    text-decoration: none;
+}
+
+.portada {
+    justify-content: center;
+    width: 100%;
+    max-width: 960px;
+    max-height: 960px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; 
+}
+
+.fav {
+    align-items: left;  
+}
+
+
+.portada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.7)));
+  }
+
+.subtitulo {
+    font-size: xx-large;
+}
+
+/* ------------------------------------------------------------ */
+
+/* media queries */
+/* Galaxy S5 */
+@media screen and (max-width: 480px) {
+    .menu {
+        padding-left: 0;
+    }
+    /* nav ul {
+        background-color: green;
+    } */
+    a,p {
+        color: black;
+        font-size: small;
+    }
+    .imagenes {
+        width: 160px; height: 160px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .spotify {
+        width: 300px; 
+        height: 80px;
+        display: flexbox;
+    }
+
+    /* Menu*/
+    /* Elementos del menu */
+    li {
+        padding-left: 1rem;
+    }
+    .subtitulo {
+        font-size: x-large;
+    }
+}
+footer nav ul{
+  margin: 15%;
+    
+}
+p{
+    float:left;
+}
+
+
+/* ------------------------------------------------------------ */
+
+/* Tablet IPAD*/
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    a,p {
+        color: black;
+        font-size: x-large;
+    }
+}

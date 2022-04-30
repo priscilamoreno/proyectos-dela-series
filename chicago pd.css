@@ -1,0 +1,177 @@
+body { 
+    height: 50%;
+    background-image: url("file:/C:/Users/Usuario/priscila/curso icaro/proyecto web/imagenes/pd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-top: 0px;
+    padding-top: 0px;
+      }
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;  
+
+    border-radius: 0px;
+
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+    border-width: 5px;
+
+    color:rgb(54, 54, 54);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.cont {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    text-align: left;
+    margin: 20px 0px 0px 150px;
+}
+
+input {
+    border: 0px;
+    width: 280px;
+    outline: none;
+    height: 10px;
+}
+
+textarea {
+    border: 0px;
+    width: 280px;
+    outline: none;
+    height: 100px;
+}
+
+.campo {
+    border: solid 1px #cccccc;
+    padding: 10px;
+}
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+    height: 30px; 
+    width: 302px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+
+    padding: 0px 0px 0px 0px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.campo:focus {
+    border-color: rgb(54, 54, 54);
+    border-width: 3px;
+}
+input:hover {
+    border-color: rgb(54, 54, 54);
+    border-width: 3px;
+  }
+textarea:hover {
+    border-color: rgb(54, 54, 54);
+    border-width: 3px;
+  }
+
+
+/* Titulo */
+#titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+/* Menu*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-right: 75px;
+    align-items: center;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(56, 54, 54,0.5));
+}
+
+/* Elementos del menu */
+li {
+    padding-left: 2rem;
+}
+
+/* Texto de los elementos del menu */
+li a{
+    text-decoration: none;
+}
+footer nav p{
+    text-align: right;
+
+}
+
+
+
+
+/* media queries */
+/* Galaxy S5 */
+@media screen and (max-width: 480px) {
+    .menu {
+        padding-left: 0;
+    }
+    /* nav ul {
+        background-color: green;
+    } */
+    a {
+        color: black;
+        font-size: small;
+    }
+    /* Elementos del menu */
+    li {
+        padding-left: 1rem;
+    }
+
+    /* Formulario  --------- */
+    form {
+        width: 95%;
+        max-width: 350px;
+        margin: 0 auto; 
+    
+        border-radius: 0px;
+    
+        border-style: solid;
+        border-color: rgb(54, 54, 54);
+        border-width: 5px;
+    
+        padding: 0px;
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+        margin: 20px 0px 0px 11px;
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+/* Tablet IPAD*/
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    a,p {
+        color: black;
+        font-size: x-large;
+    }
+}
